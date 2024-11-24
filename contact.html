@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <link rel="stylesheet" href="font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <i class="fa-brands fa-pinterest"></i>  Portfolio
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Service</a></li>
+                <li><button>Contact me</button></li>
+            </ul>
+            <div class="sidebar">
+                <button class="menu" onclick="closeSideBar()"><i class="fa fa-close"></i></button>
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Service</a>
+                <button>Contact me</button>
+            </div>
+        </div>
+        <button class="nav-menu" onclick="showSideBar()"><i class="fa fa-hand"></i></button>
+    </nav>
+    <section class="hero">
+        <div class="hero-left">
+            <h1>About <br> Happiness Babaji</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Praesentium impedit
+                 quibusdam cum quasi laborum. Doloremque,
+                  enim in quod quis ex nulla veniam 
+                  necessitatibus voluptatum quia.
+            </p>
+            <button>View Profile</button>
+
+            <div class="content">
+                <div>
+                    <h2>15 Yrs</h2>
+                    <span>Years of Experience</span>
+                </div>
+                <div>
+                    <h2>15 Yrs</h2>
+                    <span>Years of Experience</span>
+                </div>
+                <div>
+                    <h2>15 Yrs</h2>
+                    <span>Years of Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="girl.jpg" alt="">
+        </div>
+    </section>
+    <section class="hero item" id="about">
+        <div class="hero-left">
+            <h1>Hello, I'm <br> Blessing Gimba</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Praesentium impedit
+                 quibusdam cum quasi laborum. Doloremque,
+                  enim in quod quis ex nulla veniam 
+                  necessitatibus voluptatum quia.
+            </p>
+            <button>View Profile</button>
+
+            <div class="content">
+                <div>
+                    <h2>15 Yrs</h2>
+                    <span>Years of Experience</span>
+                </div>
+                <div>
+                    <h2>15 Yrs</h2>
+                    <span>Years of Experience</span>
+                </div>
+                <div>
+                    <h2>15 Yrs</h2>
+                    <span>Years of Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="girl.jpg" alt="">
+        </div>
+    </section>
+    <script>
+        let side = document.querySelector('.sidebar')
+        function showSideBar(){
+            side.style="display: flex;"
+        }
+        function closeSideBar(){
+            side.style="display: none;"
+        }
+    </script>
+</body>
+</html>
